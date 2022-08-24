@@ -7,10 +7,10 @@ namespace MethodsWithLoopsAndConditionals
         static void Main(string[] args)
         {
             //Write a method that will print to the console all numbers 1000 through - 1000.
-            Console.WriteLine("1: Count from 100 to -100");
+            Console.WriteLine("1: Count from 1000 to -1000");
             Console.WriteLine();
 
-            for (int i = 100; i >= -100; i--)
+            for (int i = 1000; i >= -1000; i--)
             {
                 Console.WriteLine($"{i}");
             }
@@ -23,10 +23,10 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine("2: Count by 3's up to 999");
             Console.WriteLine();
 
-            for (int lWarm = 3; lWarm <= 999; lWarm += 3)
+            for (int i = 1; i <= 333; i++)
 
             {
-                Console.WriteLine($"{lWarm}");
+                Console.WriteLine($"{i * 3}");
             }
 
             Console.WriteLine();
@@ -62,16 +62,16 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
 
             Console.WriteLine("Enter a number");
-            int OE = int.Parse(Console.ReadLine());
+            int uneven = int.Parse(Console.ReadLine());
 
-            if (OE % 2 == 0)
+            if (uneven % 2 == 0)
             {
-                Console.WriteLine($"{OE} is an Even number");
+                Console.WriteLine($"{uneven} is an Even number");
             }
 
             else
             {
-                Console.WriteLine($"{OE} is an Odd number");
+                Console.WriteLine($"{uneven} is an Odd number");
             }
 
 
@@ -84,16 +84,16 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
 
             Console.WriteLine("Enter any number with either a positive or a negative value");
-            int test = int.Parse(Console.ReadLine());
+            int integers = int.Parse(Console.ReadLine());
 
-            if (test >= 0)
+            if (integers >= 0)
             {
-                Console.WriteLine($"{test} is positive");
+                Console.WriteLine($"{integers} is positive");
             }
 
             else
             {
-                Console.WriteLine($"{test} is negative");
+                Console.WriteLine($"{integers} is negative");
             }
 
             Console.WriteLine();
@@ -115,6 +115,42 @@ namespace MethodsWithLoopsAndConditionals
             {
                 Console.WriteLine("Sorry, but you're not old enough to vote.");
             }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Heating Up!");
+
+            //Write a method to check if an integer(from the user) is in the range -10 to 10.
+            Console.WriteLine("1: Are you in range?");
+            Console.WriteLine();
+
+            Console.WriteLine("Enter a Number:");
+            int range = int.Parse(Console.ReadLine());
+
+
+            if (range > -11 && range < 11)
+            {
+                Console.WriteLine($"{range} is in the Range we had in mind");
+            }
+                       
+            else
+            {
+                Console.WriteLine($"{range} is not in the Range we had in mind");
+            }
+
+            Console.WriteLine();
+
+            //Write a method to display the multiplication table(from 1 to 12) of a given integer.
+            Console.WriteLine("2:Multiplication table");
+
+            Console.WriteLine("Enter the number that you would like to see the multiples of:");
+            int multi = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i <= 12; i++)
+            {
+                Console.WriteLine($"{multi} * {i} = {i * multi}");
+            }
+
 
         }
     }
